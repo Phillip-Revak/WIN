@@ -1,0 +1,81 @@
+
+
+h1 {
+    color: black; 
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+p {
+    color: white;
+}
+
+.aline {
+    display: flex;
+    justify-content: center;
+}
+
+#travel {
+    color: mediumaquamarine;
+}
+
+.edit {
+    font-size: 24px;
+}
+
+#selection {
+    color: mediumaquamarine;
+    background-color: darkslategray;
+    padding: 5px;
+    width: 150px;
+}
+
+body {
+    background-color: gray;
+}
+
+button {
+    padding: 18px;
+    background-color: green;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: green;
+    font-size: 24px;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: orange;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+div p {
+    color: salmon;
+}
+
+.div45 {
+    border: solid black;
+}
+
+.div1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    border-radius: 15px 50px 30px 5px;
+    }

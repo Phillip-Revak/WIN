@@ -1,0 +1,55 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: gray;
+  }
+  
+  .active {
+    background-color: red;
+  }
+
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: gray;
+      padding: 10px;
+  }
+
+  .search {
+      margin-top: 20px;
+      height: 20px;
+  }
+
+  .cart {
+      background-color: white;
+  }
+
+  .searchimg {
+      background-color: white;
+      
+  }
+
+  .rightside {
+      float: right;
+  }

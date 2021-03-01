@@ -1,0 +1,14 @@
+.bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+
+.shrink {
+    height: 525px;
+    width: 348px;
+}
+
+.shrink2 {
+  height: 268px;
+  width: 304px;
+}
