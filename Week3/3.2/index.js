@@ -65,19 +65,80 @@
 
 //   console.log(secretIdentity);
 
-// THIS WITH AN ASYNC FUNCTION
-let teacher = {
-	name: 'Shane',
-	speak: function() {
+// // THIS WITH AN ASYNC FUNCTION
+// // CLOSURE HACK
+// let teacher = {
+// 	name: 'Shane',
+// 	speak: function() {
+        
+//         let self = this;
+// 		//Maybe you're fetching data from an API, or getting user input
+// 		setTimeout(function(){
+// 			console.log('later my name is ' + self.name);
+// 		},5000)
 		
-		//Maybe you're fetching data from an API, or getting user input
-		setTimeout(function(){
-			console.log('later my name is ' + this.name);
-		},5000)
-		
-		//Runs immediately
-		console.log('Now my name is ' + this.name);
-	}
-}
+// 		//Runs immediately
+// 		console.log('Now my name is ' + this.name);
+// 	}
+// }
 
-teacher.speak();
+// teacher.speak();
+
+// // Arrow Functions
+// let someFunc = function(...params) {
+// 	//Some code here
+// }
+
+// let someFunc = (...params) => {
+// 	//Some code here
+// }
+
+// let cerealILove = ["Reeses Puffs", "Lucky Charms", "Cinnamon Toast Crunch"];
+// cerealILove.map(cereal => {
+//     console.log("I love " + cereal);
+// });
+
+// let slideshow = {
+//     photoList: ["picture1", "picture2", "picture3"],
+//     currentPhotoIndex: 0,
+//     nextPhoto: 
+// }
+
+// // REDUCE
+// let dollars = [46, 34, 10]
+// let sum = dollars.reduce(function(total, amount){
+//     return total + amount;
+// }, 10);
+
+// console.log(sum);
+
+// // FILTER
+// let students = [
+// 	{name: 'John Lennon', average: 90},
+// 	{name: 'Ringo Starr', average: 58},
+// 	{name: 'Paul McCartney', average: 82}
+// ];
+
+// let passingStudents = students.filter(function(value){
+// 	return value.average > 60;
+// });
+
+// console.log(passingStudents);
+// passingStudents === [
+// 	{name: 'John Lennon', average: 90},
+// 	{name: 'Paul McCartney', average: 82}
+// ];
+
+// // MAP
+// let students = [
+// 	{firstName: 'Cam', lastName: 'Newton'},
+// 	{firstName: 'Ted', lastName: 'Ginn'},
+// 	{firstName: 'Greg', lastName: 'Olsen'}
+// ]
+
+// let fullNames = students.map(function(student){
+// 	return student.firstName + ' ' + student.lastName;
+// })
+
+// console.log(fullNames);
+// fullNames === ["Cam Newton", "Ted Ginn", "Greg Olsen"]
