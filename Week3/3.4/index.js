@@ -34,8 +34,8 @@
 // let newArr = arrayOne.map(value => value + 1);
 // console.log(newArr);
 
-// let fill = (number, 'value') => new Array(3).fill('a');
-// console.log(fill);
+// // let fill = (number, 'value') => new Array(3).fill('a');
+// // console.log(fill);
 
 // // 2
 // let inputArray = [1, 2, 3];
@@ -44,44 +44,55 @@
 
 // // 3
 // let startingArray = [0, 1, false, 2, undefined, '', 3, null];
-// let filtered = startingArray.filter()
+// let filtered = startingArray.filter(value => typeof value === 'number' && value != 0);
 
-// DOM practice
-let para = document.createElement('p');
-para.innerHTML = "Hey, I'm red!"
-let cont = document.querySelector('div#container');
-cont.appendChild(para);
-let p = document.querySelector('p');
-p.style.color = 'red';
+// console.log(filtered);
 
-let third = document.createElement('h3');
-third.innerHTML = "Hey, I'm a blue h3!"
-cont.appendChild(third);
-let three = document.querySelector('h3');
-three.style.color = 'blue';
+// // 4
+// let arry = [['a', 1], ['b', 2]]
+// let mapped = arry.map(value => `${value[0]}: ${value[1]}`);
 
-let boxer = document.createElement('div');
-cont.appendChild(boxer);
-boxer.setAttribute('id', 'boxy');
-let boxy = document.querySelector('div#boxy');
-boxy.style.border = "solid black";
-boxy.style.backgroundColor = "pink";
+// console.log(mapped);
 
-let first = document.createElement('h1');
-para.innerHTML = "I'm in a div";
-boxy.appendChild(first);
-first.setAttribute('id', 'one');
-let one = document.querySelector('h1#one');
-one.style.color = 'black';
+// // 5
+// let names = ['Harry'];
+// names.push('Harold', 'Hazza', 'H');
+// console.log(names);
+// names.pop();
+// console.log(names);
+
+// // DOM practice
+// let para = document.createElement('p');
+// para.innerHTML = "Hey, I'm red!"
+// let cont = document.querySelector('div#container');
+// cont.appendChild(para);
+// let p = document.querySelector('p');
+// p.style.color = 'red';
+
+// let third = document.createElement('h3');
+// third.innerHTML = "Hey, I'm a blue h3!"
+// cont.appendChild(third);
+// let three = document.querySelector('h3');
+// three.style.color = 'blue';
+
+// let boxer = document.createElement('div');
+// cont.appendChild(boxer);
+
+// let first = document.createElement('h1');
+// first.innerHTML = "I'm in a div";
+// boxer.appendChild(first);
+// first.style.color = 'black';
+
+// let graph = document.createElement('p');
+// graph.innerHTML = "ME TOO!";
+// boxer.appendChild(graph);
+// graph.style.color = 'white';
+
+// boxer.style.border = "solid black";
+// boxer.style.backgroundColor = "pink";
+
+console.log("Hello function!");
 
 
 
 
-
-
-
-// Arnold Palmer Invitational
-// Rory, Reed, Burns
-// Hovland, Spieth, Kiz, Tringale, Davis, 
-// Kizzire, NeSmith, Malnati
-// Clark, Griffin
