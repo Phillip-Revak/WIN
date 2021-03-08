@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tip Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheet.css">
+   
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Tip Calculator</h1>
+            <form id="tip-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                  <input type="number" class="form-control" id="billTotal" placeholder="Total Bill">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Q</span>
+                    <input type="string" class="form-control" id="quality" placeholder="'Great', 'Okay', or 'Hot Trash'">
+                  </div>
+                <div class="input-group">
+                    <span class="input-group-addon">#</span>
+                    <input type="number" class="form-control" id="groupSize" placeholder="Number of People">
+                  </div>
+
+                <!-- <div class="input-group">
+                    <input type="text" id="quality" class="form-control" aria-label="Text input with dropdown button">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quality of Service</button>
+                      <div class="dropdown-menu">
+                        <a id="greatQuality" class="dropdown-item" href="#">Great</a>
+                        <a id="okayQuality" class="dropdown-item" href="#">Okay</a>
+                        <a id="trashQuality" class="dropdown-item" href="#">Hot Trash</a>
+                      </div>
+                    </div>
+                  </div> -->
+              <!-- <div class="form-group tipPersent">
+                <div class="input-group">
+                  <label for="">Tip:</label>
+
+
+                  <input type="number" class="form-control" id="tipInput" value="0">
+                  <span class="input-group-addon" id="tipOutput">!</span>
+                </div>
+              </div> -->
+
+
+
+            </form>
+            <button type="button" id="calculate">Calculate!</button>
+            <hr>
+
+            <!-- RESULTS -->
+            <div id="results" class="pt-4">
+                <h5>Results</h5>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Tip amount</span>
+                    <input type="text" class="form-control" id="tipAmount" disabled>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">Tip per Person</span>
+                      <input type="text" class="form-control" id="tipPerson" disabled>
+                    </div>
+                  </div>
+  
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">Total Bill with Tip</span>
+                    <input type="text" class="form-control" id="totalBillWithTip" disabled>
+                  </div>
+                </div>
+
+                
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
