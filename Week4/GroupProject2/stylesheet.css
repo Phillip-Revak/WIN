@@ -1,3 +1,8 @@
 #results {
     display:none;
   }
+
+#harry {
+    display: none;
+    margin-left: 70px;
+}

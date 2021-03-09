@@ -9,61 +9,54 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+    <!-- CSS Link -->
     <link rel="stylesheet" href="stylesheet.css">
    
   </head>
+  <!-- Beginning of the Body of the HTML. Using bootstrap. It's a bunch of Div's they have different boostrap classes. -->
   <body class="bg-dark">
+      <!-- Container Div -->
     <div class="container">
+        <!-- Row Div -->
       <div class="row">
+          <!-- Column Div with 6 column width -->
         <div class="col-md-6 mx-auto">
+            <!-- Body of tip calculator held within a card -->
           <div class="card card-body text-center mt-5">
+              <!-- Head of the calculator -->
             <h1 class="heading display-5 pb-3">Tip Calculator</h1>
+            <!-- The three input fields are held within a form -->
             <form id="tip-form">
               <div class="form-group">
+                  <!-- First input field. An input tag that receives the Bill amount. -->
                 <div class="input-group">
                   <span class="input-group-addon">$</span>
                   <input type="number" class="form-control" id="billTotal" placeholder="Total Bill">
                 </div>
+                <!-- Second input field. An input tag that receives the Quality of Service. -->
                 <div class="input-group">
                     <span class="input-group-addon">Q</span>
                     <input type="string" class="form-control" id="quality" placeholder="'Great', 'Okay', or 'Hot Trash'">
                   </div>
+                  <!-- Third input field. An input tag that receives the number of people. -->
                 <div class="input-group">
                     <span class="input-group-addon">#</span>
                     <input type="number" class="form-control" id="groupSize" placeholder="Number of People">
                   </div>
 
-                <!-- <div class="input-group">
-                    <input type="text" id="quality" class="form-control" aria-label="Text input with dropdown button">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quality of Service</button>
-                      <div class="dropdown-menu">
-                        <a id="greatQuality" class="dropdown-item" href="#">Great</a>
-                        <a id="okayQuality" class="dropdown-item" href="#">Okay</a>
-                        <a id="trashQuality" class="dropdown-item" href="#">Hot Trash</a>
-                      </div>
-                    </div>
-                  </div> -->
-              <!-- <div class="form-group tipPersent">
-                <div class="input-group">
-                  <label for="">Tip:</label>
-
-
-                  <input type="number" class="form-control" id="tipInput" value="0">
-                  <span class="input-group-addon" id="tipOutput">!</span>
-                </div>
-              </div> -->
-
-
-
             </form>
+            <!-- End of form -->
+
+            <!-- Button that calculates the input. When the button is clicked, the values that are in the input fields are run in the javascript function. -->
             <button type="button" id="calculate">Calculate!</button>
             <hr>
 
             <!-- RESULTS -->
+            <!-- This first div holds the entire results section. In the css it is set to display: none so that it does not show up at first. But once there are values in the input fields run through the function. Then there is a javascript command to overwrite the Css and display the contents of this div. -->
             <div id="results" class="pt-4">
                 <h5>Results</h5>
                 <div class="form-group">
+                    <!-- This block is an input field that is hidden and is also disabled. And we have set the value that shows up in this field through our javascript function. So the Tip amount is displayed. -->
                   <div class="input-group">
                     <span class="input-group-addon">Tip amount</span>
                     <input type="text" class="form-control" id="tipAmount" disabled>
@@ -71,6 +64,7 @@
                 </div>
 
                 <div class="form-group">
+                    <!-- This block is an input field that is hidden and is also disabled. And we have set the value that shows up in this field through our javascript function. So the Tip per person is displayed. -->
                     <div class="input-group">
                       <span class="input-group-addon">Tip per Person</span>
                       <input type="text" class="form-control" id="tipPerson" disabled>
@@ -78,10 +72,23 @@
                   </div>
   
                 <div class="form-group">
+                    <!-- This block is an input field that is hidden and is also disabled. And we have set the value that shows up in this field through our javascript function. So the Total bill with tip is displayed. -->
                   <div class="input-group">
                     <span class="input-group-addon">Total Bill with Tip</span>
                     <input type="text" class="form-control" id="totalBillWithTip" disabled>
                   </div>
+                </div>
+
+
+
+
+
+                
+                <div >
+                    <!-- This is an iframe tag that holds a gif -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="harry" class="embed-responsive-item" src="https://i.pinimg.com/originals/e5/34/e1/e534e104a5ef0ea1d1db47cef427a47a.gif" allowfullscreen></iframe>
+                      </div>
                 </div>
 
                 
