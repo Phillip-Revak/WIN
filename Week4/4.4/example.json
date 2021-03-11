@@ -1,0 +1,6 @@
+{
+    "name": "John",
+    "age": 35,
+    "member": false,
+    "codes": [3.5, 234, 565, 777]
+}
