@@ -85,3 +85,9 @@ clk.addEventListener("click", function(event) {
     looseChange(getMoney, info);
 
 });
+
+function toCelsius(result){
+    let celsiusNum = result - 32 * 5/9;
+    return celsiusNum; 
+}
+
