@@ -85,21 +85,3 @@ clk.addEventListener("click", function(event) {
     looseChange(getMoney, info);
 
 });
-
-
-
-
-// Morikawa, Spieth
-// Hovland(am), Niemann, Reed
-// Ooust(am), Ancer, TRINGALE, Kiz(am), Burns(am), Palmer, Smith(am)
-// Conners(am), Griffin(am), Kirk, Hatton(am)
-
-
-// Ownership
-// Cantlay, Finau, Xander, Morikawa, Rahm, Webb, Hovland, Niemann, Ancer, Zalatoris
-// Low
-// DJ, JT, Rory, DeChambeau, Reed
-
-// Rory(am), Xander(am), 
-// Nesmith, Steele, Werenski,
-// Conners(am), Griffin(am), Kirk, Hatton(am)
