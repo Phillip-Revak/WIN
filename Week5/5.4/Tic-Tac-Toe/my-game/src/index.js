@@ -1,6 +1,51 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {
+  BrowserRouter as Router, // we are aliasing this module for a cleaner call
+  Route,
+  Link
+  // etc.
+} from 'react-router-dom';
+
+
+
+class Routes extends Component {
+  render(){
+    return(
+      <Router>
+        <div>
+          <Navbar />
+          <hr />
+          <Route name="Home" exact path="/" component={Home}/>
+          <Route name="Board" path="/board" component={Board}/>
+          <Route name="Game" path="/game" component={Game} />
+        </div>
+      </Router>
+    );
+  }
+}
+
+class Navbar extends Component {
+  render(){
+    return(
+      <div className="nav">
+        <Link to="/">Home</Link> | 
+        <Link to="board">Board</Link> | 
+        <Link to="game">Game</Link>
+      </div>
+    );
+  }
+}
+
+class Home extends Component {
+  render() {
+    return (
+      <h1>This is the home page.</h1>,
+      <p>Thanks for visiting, on the Board tab you can play a game of Tic-Tac-Toe.</p>
+    );
+  }
+}
 
 function Square(props) {
       return (
@@ -70,7 +115,9 @@ function Square(props) {
             {this.renderSquare(7)}
             {this.renderSquare(8)}
           </div>
+          <p>This is the Board!</p>
         </div>
+        
       );
     }
   }
@@ -86,7 +133,9 @@ function Square(props) {
             <div>{/* status */}</div>
             <ol>{/* TODO */}</ol>
           </div>
+          <p>This is the Game!</p>
         </div>
+        
       );
     }
   }
@@ -117,3 +166,5 @@ function Square(props) {
     }
     return null;
   }
+
+  ReactDOM.render(<Routes />, document.getElementById('root'));
