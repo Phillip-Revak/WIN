@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Board from './Components/Board';
+import Routes from './Components/Routes';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <Board />
+    <Routes />
     {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
