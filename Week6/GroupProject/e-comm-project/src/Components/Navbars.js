@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-// import Board from './Board'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap';
 class Navbars extends Component {
     render() {
@@ -21,9 +14,9 @@ class Navbars extends Component {
       <Nav.Link href="/board">Store</Nav.Link>
       <Nav.Link href="/about">About Us</Nav.Link>
       <NavDropdown title="Products" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Shoes</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Hats</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Jerseys</NavDropdown.Item>
+        <NavDropdown.Item href="/board">Shoes</NavDropdown.Item>
+        <NavDropdown.Item href="/board">Hats</NavDropdown.Item>
+        <NavDropdown.Item href="/board">Jerseys</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Form inline>
