@@ -1,33 +1,36 @@
 import React, {Component} from 'react';
 import '../css/Board.css';
 import Note from './Note.js';
+import myFirebase from '../utility/MyFirebase';
 
 class Board extends Component {
   constructor() {
     super();
     this.state = {
-      notes: [
-        // {
-        //   title: "Class Notes",
-        //   body: "Always use constructors when extending another class"
-        // },
-        // {
-        //   title: "My New Address",
-        //   body: "2001 N Lonhill Phoenix, AZ 81234"
-        // },
-        // {
-        //   title: "React Notes",
-        //   body: "Everything in React is a component"
-        // }
-      ]
+      notes: []
     }
+    this.firebaseDBRef = myFirebase.getFirebaseRef();
+    this.firebaseDBRef.once('value').then((snapshot) => {
+      this.addNote(snapshot.val());
+    });
   }
 
   // Board.js Board Component Class Function
 
-  addNote() {
-    let notes = this.state.notes;
-    notes.push(
+  addNote(notes) {
+    console.log(notes);
+    if(notes){
+      for(let key in notes){
+        this.state.notes.push(
+          {
+            id: key,
+            title: notes[key].title,
+            body: notes[key].body
+          }
+        );
+      }
+    } else {
+      this.state.notes.push(
       {
         id: Date.now()
       }
@@ -38,6 +41,7 @@ class Board extends Component {
       }
     );
   }
+}
 
   deleteNote(id){
     let newNoteArr = this.state.notes;
@@ -61,7 +65,7 @@ class Board extends Component {
 
           {
             this.state.notes.map(item => {
-                return <Note title={item.title} body={item.body} key={item.id} id={item.id} deleteHandler={this.deleteNote.bind(this)}/>
+                return <Note key={note.id} id={note.id} title={note.title} body={note.body} deleteHandler={this.deleteNote.bind(this)}/>
               })
           }
 
@@ -72,7 +76,7 @@ class Board extends Component {
           </div>
         </div>
         <div>
-          <button className="btn btn-success add-button" onClick={this.addNote.bind(this)}>Add</button>
+          <button className="btn btn-success add-button" onClick={this.addNote.bind(this, null)}>Add</button>
         </div>
       </div>
     );
