@@ -26,13 +26,28 @@ public class Main {
             System.out.println("Program Quit");
         }
 
-        int i;
-        for(i=0; i<=10; i++)
-        {
-            String[] question = {"Do you have a red car?", "Where did you grow up?", "What is your favorite pet?", "Do you have a favorite athlete?"};
-            System.out.println(question[i]);
-            String answer = input.nextLine();
-            System.out.println(answer);
+        System.out.println("Who is your favorite athlete?");
+        String answer = input.nextLine();
+        System.out.println("Where did you grow up?");
+        String answer2 = input.nextLine();
+        System.out.println("How many siblings do you have?");
+        int answer3 = input.nextInt();
+        System.out.println("Do you have a red car?");
+        String answer4 = input.next();
+        System.out.println("What is your favorite number?");
+        int answer5 = input.nextInt();
+        System.out.println("How many pairs of shoes do you own?");
+        int answer6 = input.nextInt();
+
+        int magicBall = answer3 * 5;
+        int lot1 = answer5;
+        int lot2 = answer6;
+        int lot3 = answer3 * 10 / 3;
+        int lot4 = answer5 + 6 / 2;
+        int lot5 = answer6 - 2 * 3;
+
+        System.out.printf("Lottery Numbers: %d %d %d %d %d Magic Ball Number: %d", lot1, lot2, lot3, lot4, lot5, magicBall);
+
         }
+
     }
-}
