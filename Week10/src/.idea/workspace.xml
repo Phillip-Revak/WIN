@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="274a0d4e-01d9-4054-9694-215d7cb494bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../10.2/src/com/tts/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10.3.2/src/com/tts/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/Motorcycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/RallyCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/Vehicle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1rUOJg7Dk3WvdIqfR7AojWH7PIy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="274a0d4e-01d9-4054-9694-215d7cb494bd" name="Default Changelist" comment="" />
+      <created>1619027131656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619027131656</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
