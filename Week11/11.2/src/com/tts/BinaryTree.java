@@ -3,7 +3,6 @@ package com.tts;
 public class BinaryTree {
     Node root;
 
-
     @Override
     public String toString() {
         return "BinaryTree: \nroot=" + root;
