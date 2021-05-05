@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="274a0d4e-01d9-4054-9694-215d7cb494bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../10.2/src/com/tts/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10.3.2/src/com/tts/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/Motorcycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/RallyCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10.3/src/com/tts/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week12/src/com/tts/BadThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week12/src/com/tts/BadThreads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,5 +44,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
