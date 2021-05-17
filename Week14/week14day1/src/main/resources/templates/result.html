@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'">
+    This text replaced by Thymeleaf
+</p>
+
+<p th:text="#{msg.welcome}">Welcome Everyone
+
+<ul th:each="book : ${books}">
+    <li>
+        <span th:text="${book.title}"></span>
+        <span th:text="${book.author}"></span>
+    </li>
+</ul>
+
+<h1>Result</h1>
+<p th:text="'id: ' + ${greeting.id}" />
+<p th:text="'content: ' + ${greeting.content}" />
+<a href="/greeting">Submit another message</a>
+
+<!--<form th:action="@{/postendpoint}"></form>-->
+
+<!--<p>Do you see this one too?</p>-->
+</body>
+</html>
