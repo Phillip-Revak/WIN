@@ -40,5 +40,20 @@ public class BlogPostController {
         return "redirect:/";
     }
 
+    @GetMapping("/blogposts/{id}")
+    public String editPostWithId(@PathVariable Long id, BlogPost blogPost, Model model){
+        BlogPost foundPost = blogPostService.findBlogPostById(id);
+        model.addAttribute("blogPost", foundPost);
+        return "blogpost/edit";
+    }
+
+    @PostMapping("/blogposts/update/{id}")
+    public String updateExistingPost(@PathVariable Long id,
+                                     BlogPost blogPost,
+                                     Model model){
+        BlogPost editedPost = blogPostService.editBlogPostById(id, blogPost);
+        model.addAttribute("blogPost", editedPost);
+        return "blogpost/result";
+    }
 
 }
