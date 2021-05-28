@@ -4,6 +4,6 @@ spring:
       client:
         registration:
           github:
-            clientId: 5591b2f9d2b4599d07d3
-            clientSecret: 862d4bd5c7969bc5310264abd5bab92e25d47d52
+#            clientId: // add OAUTH KEYS
+#            clientSecret: // add OAUTH KEYS
 # ...
