@@ -53,5 +53,4 @@ public class Tweet {
 
     @CreationTimestamp
     private Date createdAt;
-
 }
